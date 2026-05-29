@@ -134,7 +134,7 @@ export default function PageLoader() {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.5 }}
           >
-            {progress < 100 ? "INITIALIZING..." : "READY"}
+            {progress < 100 ? "INITIALIZING..." : "WELCOME TO MY PORTFOLIO"}
           </motion.p>
         </motion.div>
       )}

@@ -3,6 +3,7 @@
 import { useRef, useState, useCallback } from 'react';
 import { motion, useInView } from 'framer-motion';
 import { ExternalLink, FolderGit2 } from 'lucide-react';
+import { FaGithub } from 'react-icons/fa';
 import { projects } from '@/data/portfolio';
 
 const sectionVariants = {
@@ -190,6 +191,7 @@ function ProjectCard({
                 rel="noopener noreferrer"
                 className="btn-secondary inline-flex items-center gap-2 text-sm"
               >
+                <FaGithub size={16} />
                 <span>View on GitHub</span>
                 <ExternalLink size={14} />
               </a>
