@@ -184,12 +184,12 @@ function ProjectCard({
 
           {/* GitHub button */}
           {project.github && (
-            <div className="mt-auto">
+            <div className="mt-auto relative z-10">
               <a
                 href={project.github}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-secondary inline-flex items-center gap-2 text-sm"
+                className="btn-secondary inline-flex items-center gap-2 text-sm cursor-pointer"
               >
                 <FaGithub size={16} />
                 <span>View on GitHub</span>

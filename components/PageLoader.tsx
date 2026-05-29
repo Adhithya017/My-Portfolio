@@ -12,14 +12,14 @@ export default function PageLoader() {
       setProgress((prev) => {
         if (prev >= 100) {
           clearInterval(interval);
-          setTimeout(() => setLoading(false), 400);
+          setTimeout(() => setLoading(false), 1500);
           return 100;
         }
         // Accelerating progress
-        const increment = prev < 70 ? 3 : prev < 90 ? 2 : 1;
+        const increment = prev < 70 ? 2 : prev < 90 ? 1.5 : 1;
         return Math.min(prev + increment, 100);
       });
-    }, 30);
+    }, 40);
 
     return () => clearInterval(interval);
   }, []);

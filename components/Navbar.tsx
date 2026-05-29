@@ -81,11 +81,11 @@ export default function Navbar() {
                 fill="none"
                 className="stroke-draw"
               />
-              {/* Single A letter - centered */}
+              {/* A letter - first */}
               <path
-                d="M16 32L22 12L28 32"
+                d="M14 30L19 14H21L26 30"
                 stroke="url(#logoGradient)"
-                strokeWidth="2.5"
+                strokeWidth="2"
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 fill="none"
@@ -93,13 +93,24 @@ export default function Navbar() {
               />
               {/* A crossbar */}
               <line
-                x1="18"
-                y1="25"
-                x2="26"
-                y2="25"
+                x1="16"
+                y1="24"
+                x2="24"
+                y2="24"
+                stroke="url(#logoGradient)"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                className="stroke-draw"
+              />
+              {/* Second A partial */}
+              <path
+                d="M22 30L27 14H29L34 30"
                 stroke="url(#logoGradient)"
                 strokeWidth="2"
                 strokeLinecap="round"
+                strokeLinejoin="round"
+                fill="none"
+                opacity="0.6"
                 className="stroke-draw"
               />
               <defs>
