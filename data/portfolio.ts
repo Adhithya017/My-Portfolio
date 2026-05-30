@@ -51,7 +51,7 @@ export const personalInfo = {
   phone: "+91 74833 84532",
   location: "Bangalore, Karnataka, India",
   profileImage: "/profile.jpg",
-  resumePdf: "/Adithya_Developer.pdf",
+  resumePdf: "/Adithya_Acharya_Developer.pdf",
   summary:
     "Java Full-Stack Developer with hands-on experience in Spring Boot, React.js, and MySQL. Skilled in building REST APIs, responsive web applications, and database-driven systems. Passionate about developing secure, scalable, and efficient software solutions with a focus on clean architecture and real-world impact.",
   subtitles: [
