@@ -1,36 +1,110 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Adithya Acharya — Personal Portfolio
 
-## Getting Started
+A stunning, animated 3D personal portfolio website built with modern web technologies.
 
-First, run the development server:
+![Portfolio Preview](./public/og-image.png)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🚀 Tech Stack
+
+- **Framework:** Next.js 14 (App Router) + TypeScript
+- **Styling:** Tailwind CSS + Custom CSS (Glassmorphism, Animations)
+- **3D Graphics:** Three.js + React Three Fiber + Drei
+- **Animations:** Framer Motion + CSS Animations
+- **Smooth Scrolling:** Lenis
+- **Icons:** Lucide React + React Icons
+- **Fonts:** Space Grotesk (headings) + Inter (body)
+
+## 📁 Project Structure
+
+```
+├── app/
+│   ├── globals.css          # Global styles, design tokens, animations
+│   ├── layout.tsx           # Root layout with fonts & meta
+│   └── page.tsx             # Main page composing all sections
+├── components/
+│   ├── Navbar.tsx           # Fixed glass navbar with mobile menu
+│   ├── PageLoader.tsx       # Animated AA monogram loader
+│   ├── SmoothScroll.tsx     # Lenis smooth scroll wrapper
+│   ├── CustomCursor.tsx     # Animated cursor with glow effects
+│   ├── sections/
+│   │   ├── HeroSection.tsx      # Hero with animated text & photo
+│   │   ├── AboutSection.tsx     # About with count-up stats
+│   │   ├── SkillsSection.tsx    # Tabbed skill grid with icons
+│   │   ├── ExperienceSection.tsx # Timeline layout
+│   │   ├── ProjectsSection.tsx  # 3D tilt project cards
+│   │   ├── EducationSection.tsx # Education cards
+│   │   ├── CertificationsSection.tsx # Flip card certifications
+│   │   ├── ContactSection.tsx   # Contact form + info cards
+│   │   └── Footer.tsx          # Footer with socials
+│   └── three/
+│       ├── HeroScene.tsx       # Three.js hero canvas
+│       ├── ParticleField.tsx   # Mouse-reactive particles
+│       ├── WireframeGlobe.tsx  # Rotating wireframe icosahedron
+│       └── ContactScene.tsx    # Animated wave plane
+├── data/
+│   └── portfolio.ts        # All portfolio content (easy to edit)
+├── lib/
+│   └── utils.ts            # Utility functions
+└── public/
+    ├── profile.jpg          # ⬅️ DROP YOUR PHOTO HERE
+    └── Adithya_Acharya_Resume.pdf  # ⬅️ DROP YOUR RESUME PDF HERE
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🛠️ Setup
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. **Add your assets:**
+   - Drop your profile photo at `public/profile.jpg`
+   - Drop your resume PDF at `public/Adithya_Acharya_Resume.pdf`
 
-## Learn More
+3. **Run development server:**
+   ```bash
+   npm run dev
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+4. **Open in browser:**
+   Navigate to [http://localhost:3000](http://localhost:3000)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 📝 Customization
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+All portfolio content is centralized in [`data/portfolio.ts`](./data/portfolio.ts). Edit this single file to update:
+- Personal information
+- Experience entries
+- Projects
+- Skills
+- Education
+- Certifications
+- Social links
 
-## Deploy on Vercel
+## 🚀 Deploy to Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Push your code to GitHub
+2. Go to [vercel.com](https://vercel.com) and import your repository
+3. Vercel will auto-detect Next.js and deploy
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Or use the CLI:
+```bash
+npx vercel
+```
+
+## ✨ Features
+
+- 🌌 3D particle field reactive to mouse movement
+- 🎭 Animated page loader with AA monogram
+- 🖱️ Custom animated cursor with glow effects
+- 💎 Glassmorphism cards throughout
+- 🎬 Scroll-triggered animations (Framer Motion)
+- 🧈 Buttery smooth scrolling (Lenis)
+- 📱 Fully responsive (mobile, tablet, desktop)
+- 🎨 Dark futuristic "developer cosmos" theme
+- ⚡ Optimized performance with lazy-loaded 3D scenes
+- ♿ Reduced motion support
+- 🔍 SEO optimized with Open Graph meta tags
+
+## 📄 License
+
+© 2026 Adithya Acharya. All rights reserved.
